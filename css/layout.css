@@ -1,4 +1,11 @@
 /********** Fixes **********/
+div {
+    column-count: 3;
+}
+
+div {
+    column-rule-style: solid;
+}
 
 * {
   margin:0;
@@ -21,6 +28,13 @@
 .clear {
   clear: both;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 /* Posititoning Classes */
 
